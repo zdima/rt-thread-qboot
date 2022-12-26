@@ -39,17 +39,6 @@
 #include <rtdbg.h>
 
 #ifdef QBOOT_APP_RUN_IN_QSPI_FLASH
-static void qbt_qspi_flash_init(void)
-{
-    //waiting realize
-}
-
-void qbt_jump_to_app(void)
-{
-    qbt_qspi_flash_init();
-    
-    //waiting realize
-}
 static int nor_flash_memory_mapped_mode(struct rt_qspi_device * device)
 {
     QSPI_CommandTypeDef s_command;
